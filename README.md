@@ -17,7 +17,7 @@ Bu proje, **Web Teknolojileri ve Programlama** dersi kapsamında oluşturulmuş 
 
 ## Domain Adresi
 
-Uygulama şu adresten erişilebilir: [Kişisel Blog](http://www.ornekdomain.com)
+Uygulama şu adresten erişilebilir: [Kişisel Blog](https://edanurerguvenwebsite-ttgx.vercel.app/)
 
 ## Kurulum
 
