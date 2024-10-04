@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kişisel Blog</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0f7fa;
+        color: #333;
+      }
+
+      header {
+        background-color: #0077b6;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        padding-left: 180px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+      }
+
+      nav {
+        background-color: #0096c7;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 15px;
+        background-color: #00b4d8;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: #48cae4;
+      }
+
+      main {
+        padding: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-top: 40px;
+      }
+
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+      }
+
+      main h2 {
+        color: #0077b6;
+        font-weight: 700;
+      }
+
+      main p {
+        font-weight: 300;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      .video-section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      iframe {
+        width: 80%;
+        height: 450px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+      }
+
+      footer {
+        background-color: #023e8a;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .skills-list {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 20px;
+        }
+
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Merhaba, Kişisel Bloğuma Hoşgeldiniz</h1>
+      <img src="web.jpeg" alt="Profil Fotoğrafım" class="profile-img" />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><a href="https://w3.sdu.edu.tr/" target="_blank">Okul</a></li>
+        <li>
+          <a href="https://www.izmirteknoloji.com.tr/" target="_blank">Staj</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="anasayfa">
+        <h2>Kendim Hakkında</h2>
+        <p>
+          Ben Eda Nur Ergüven 17 Şubat 2003'te Şanlıurfa'da doğdum. Süleyman
+          Demirel Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.
+          Yabancı dil olarak B1 seviyesinde İngilizce bilmekteyim. Okul hayatım
+          dışında yeni yerler ve tatlar keşfetmeyi, arkadaşlarımla vakit
+          geçirmeyi ve müzik dinlemeyi severim.
+        </p>
+      </section>
+
+      <section id="Deneyim">
+        <h2>Staj Deneyimim</h2>
+        <p>
+          Stajımı
+          <a href="https://www.izmirteknoloji.com.tr/" target="_blank"
+            >İzmir İnovasyon ve Teknoloji A.Ş</a
+          >
+          firmasında yaptım. Staj süresince Linux işletim sistemini kullanarak
+          frontend,backend ve veritabanı alanında çalışmalarım oldu.Ayrıca
+          İzmirim kartın mobil uygulamasındaki sürüm güncellemesinin test
+          aşamalarında bulundum.
+        </p>
+      </section>
+
+      <section id="video" class="video-section">
+        <h2>Videom</h2>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/S_XguXg01HY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="yazilim-dilleri">
+        <h2>Teknik Becerilerim</h2>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>C</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="iletisim">
+        <h2>İletişim</h2>
+        <p>E-posta: edanurerguven682@gmail.com</p>
+        <p>
+          Github:
+          <a href="https://github.com/edaerguven1" target="_blank"
+            >edaerguven1</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Eda Nur Ergüven | 2311012908 | Tüm hakları saklıdır.</p>
+    </footer>
+  </body>
+</html>
